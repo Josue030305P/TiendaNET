@@ -104,7 +104,12 @@ namespace DESIGNER
                 }
 
             }
+
+        private void btnAcercaDe_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hola quer hace");
         }
+    }
   } 
 
 

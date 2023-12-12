@@ -38,6 +38,7 @@ namespace DESIGNER
             this.btnIniciar = new System.Windows.Forms.Button();
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.errorLogin = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnAcercaDe = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorLogin)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,11 +114,22 @@ namespace DESIGNER
             // 
             this.errorLogin.ContainerControl = this;
             // 
+            // btnAcercaDe
+            // 
+            this.btnAcercaDe.Location = new System.Drawing.Point(68, 396);
+            this.btnAcercaDe.Name = "btnAcercaDe";
+            this.btnAcercaDe.Size = new System.Drawing.Size(319, 42);
+            this.btnAcercaDe.TabIndex = 7;
+            this.btnAcercaDe.Text = "Acerca de";
+            this.btnAcercaDe.UseVisualStyleBackColor = true;
+            this.btnAcercaDe.Click += new System.EventHandler(this.btnAcercaDe_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(446, 450);
+            this.Controls.Add(this.btnAcercaDe);
             this.Controls.Add(this.btnFinalizar);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.txtClaveAcceso);
@@ -146,5 +158,6 @@ namespace DESIGNER
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.ErrorProvider errorLogin;
+        private System.Windows.Forms.Button btnAcercaDe;
     }
 }
